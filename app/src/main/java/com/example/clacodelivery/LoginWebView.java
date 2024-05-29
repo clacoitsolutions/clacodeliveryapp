@@ -42,7 +42,7 @@ public class LoginWebView extends AppCompatActivity {
     private void loadWebView() {
         if (NetworkUtil.isInternetAvailable(this)) {
             webView.setWebViewClient(new CustomWebViewClient());
-            webView.loadUrl("https://www.claco.in/CustomerAccount/Index");
+            webView.loadUrl("https://www.claco.in");
         } else {
             showNoInternetDialog();
         }
