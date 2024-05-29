@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ClacoDelivery</string>
+
+
+    <!--   Splash Heading-->
+    <string name="heading_1">Welcome to Claco</string>
+    <string name="heading_2">Grow With Claco</string>
+    <string name="heading_3">Speedy Delivery</string>
+
+    <!--    description-->
+
+    <string name="description_1">Discover endless possibilities in every click.</string>
+    <string name="description_2">More Shopping and get more Discounts </string>
+    <string name="description_3">Sit back and relax while we bring your purchases to your doorstep in record time.</string>
+
+</resources>
