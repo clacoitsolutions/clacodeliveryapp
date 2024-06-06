@@ -43,7 +43,7 @@ public class SkipWebView extends AppCompatActivity {
     private void loadWebView() {
         if (NetworkUtil.isInternetAvailable(this)) {
             webView.setWebViewClient(new CustomWebViewClient());
-            webView.loadUrl("https://www.claco.in/CustomerAccount/Index");
+            webView.loadUrl("https://delivery.claco.in/Home/SignIn");
         } else {
             showNoInternetDialog();
         }

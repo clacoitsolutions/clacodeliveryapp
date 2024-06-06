@@ -1,5 +1,6 @@
 package com.example.clacodelivery;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ public class LoginWebView extends AppCompatActivity {
     private WebView webView;
     private AlertDialog noInternetDialog;
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +44,7 @@ public class LoginWebView extends AppCompatActivity {
     private void loadWebView() {
         if (NetworkUtil.isInternetAvailable(this)) {
             webView.setWebViewClient(new CustomWebViewClient());
-            webView.loadUrl("https://www.claco.in");
+            webView.loadUrl("https://delivery.claco.in/");
         } else {
             showNoInternetDialog();
         }
